@@ -1,0 +1,11 @@
+# Disable directory browsing
+Options -Indexes
+
+# Set default index files
+DirectoryIndex index.php login.php
+
+# Prevent access to sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
